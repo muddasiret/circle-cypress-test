@@ -7,5 +7,5 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
-          working_directory: ~/circle-cypress-test
+          working_directory: circle-cypress-test
           command: npm install && npx cypress run
