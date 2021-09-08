@@ -10,4 +10,4 @@ workflows:
           working_directory: cypress-tests
           command: |
             npm install
-            npm run cypress:run --START_URL=${START_URL}
+            npm run cypress:run
