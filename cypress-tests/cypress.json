@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://staging.seeeff.com",
+    "baseUrl": "http://localhost:3000",
     "execTimeout": 1800000,
     "defaultCommandTimeout": 30000,
     "requestTimeout": 10000,
