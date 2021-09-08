@@ -10,4 +10,4 @@ workflows:
           working_directory: cypress-tests
           command: |
             npm install
-            npm run cypress:run --START_URL=${START_URL} --RECORD_KEY=${RECORD_KEY}
+            npm run cypress:run --START_URL=${START_URL}

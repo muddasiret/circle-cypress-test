@@ -6,6 +6,6 @@
         "cy:open": "cypress open",
         "cy:version": "cypress version",
         "cy:verify": "cypress verify",
-        "cypress:run": "CYPRESS_BASE_URL=$npm_config_START_URL cypress run --browser chrome --headless --record --key $npm_config_RECORD_KEY"
+        "cypress:run": "CYPRESS_BASE_URL=$npm_config_START_URL cypress run --browser chrome --headless"
     }
 }
