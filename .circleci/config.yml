@@ -6,4 +6,4 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
-          working_directory: ~/circle-cypress-test/cypress-tests
+          working_directory: ~/circle-cypress-test
