@@ -1,9 +1,25 @@
-version: 2.1
+version: 2
+
 orbs:
-  cypress: cypress-io/cypress@1
+  slack: circleci/slack@3.2.0
+  cypress: cypress-io/cypress@1.16.1
+
 workflows:
-  build:
+  version: 2
+  commit:
     jobs:
-      - cypress/run:
-          yarn: true
-          working_directory: ~/circle-cypress-test
+
+jobs:
+  cypress-ci:
+    parallelism: 1
+    docker:
+      - image: "cypress/included:3.4.0"
+    working_directory: ~/circle-cypress-test
+    steps:
+      - checkout
+      - run:
+          name: Execute cypress
+          command: |
+            cd cypress-tests
+            npm install
+            npx cypress run
