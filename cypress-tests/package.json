@@ -1,11 +1,13 @@
 {
     "devDependencies": {
-        "cypress": "^8.3.1"
+        "cypress": "^8.3.1",
+        "start-server-and-test": "^1.14.0"
     },
     "scripts": {
         "cy:open": "cypress open",
         "cy:version": "cypress version",
         "cy:verify": "cypress verify",
-        "cypress:run": "CYPRESS_BASE_URL=$npm_config_START_URL cypress run --browser chrome --headless"
+        "cy:run": "cypress run",
+        "cypress:run": "start-server-and-test start http://localhost:3000 cy:run"
     }
 }
